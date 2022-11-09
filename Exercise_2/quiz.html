@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    .question{
+        margin: 2em;
+    }
+</style>
+<body>
+    <div class="question">
+        <form action="quiz.php" method="post" style="display: flex; flex-direction: column;">
+            <p>1. What is the color of the sun?</p>
+            <div>
+                <input type="radio" name="q1" id="white" value="white">
+                <label for="white">white</label>
+            </div>
+            <div>
+                <input type="radio" name="q1" id="orange" value="orange">
+                <label for="orange">orange</label>
+            </div>
+            <div>
+                <input type="radio" name="q1" id="blue" value="blue">
+                <label for="blue">blue</label>
+            </div>
+            <div>
+                <input type="radio" name="q1" id="red" value="red">
+                <label for="red">red</label>
+            </div>
+            <br>
+            <br>
+            <p>2. What is the taste of sugar?</p>
+            <div>
+                <input type="radio" name="q2" id="sweet" value="sweet">
+                <label for="sweet">sweet</label>
+            </div>
+            <div>
+                <input type="radio" name="q2" id="sour" value="sour">
+                <label for="sour">sour</label>
+            </div>
+            <div>
+                <input type="radio" name="q2" id="bitter" value="bitter">
+                <label for="bitter">bitter</label>
+            </div>
+            <div>
+                <input type="radio" name="q2" id="salty" value="salty">
+                <label for="salty">salty</label>
+            </div>
+            <br>
+            <br>
+            <p>3. How many bits is in 1 byte?</p>
+            <div>
+                <input type="radio" name="q3" id="8" value="8">
+                <label for="8">8</label>
+            </div>
+            <div>
+                <input type="radio" name="q3" id="9" value="9">
+                <label for="9">9</label>
+            </div>
+            <div>
+                <input type="radio" name="q3" id="2" value="2">
+                <label for="2">2</label>
+            </div>
+            <div>
+                <input type="radio" name="q3" id="4" value="4">
+                <label for="4">4</label>
+            </div>
+            <br>
+            <br>
+            <p>4. In what continent is USA located?</p>
+            <div>
+                <input type="radio" name="q4" id="africa" value="africa">
+                <label for="africa">africa</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" id="europe" value="europe">
+                <label for="europe">europe</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" id="asia" value="asia">
+                <label for="asia">asia</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" id="america" value="america">
+                <label for="america">america</label>
+            </div>
+            <br>
+            <br>
+            <p>5. What is the capital city of UK?</p>
+            <div>
+                <input type="radio" name="q5" id="newyork" value="newyork">
+                <label for="newyork">new york</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" id="manchester" value="manchester">
+                <label for="manchester">manchester</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" id="london" value="london">
+                <label for="london">london</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" id="paris" value="paris">
+                <label for="paris">paris</label>
+            </div>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
