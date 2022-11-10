@@ -8,52 +8,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="signin">
-        <div class="card">
-            <div class="title">Sign in to Website!</div>
-            <div class="inputfields">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="password" name="password" id="password" placeholder="Password">
-            </div>
-            <div class="enjoy">Enjoy your shopping!</div>
-        </div>
-    </div>
-    <div class="items">
-        <div class="image">
-            <img src="resources/shoe.png" alt="shoe">
-            <img src="resources/ball.png" alt="ball">
-            <img src="resources/shirt.png" alt="shirt">
-        </div>
-        <div class="quantity">
-            <input type="number" name="shoeqty" id="shoeqty" placeholder="Shoe Qty">
-            <input type="number" name="ballqty" id="ballqty" placeholder="Ball Qty">
-            <input type="number" name="shirtqty" id="shirtqty" placeholder="Shirt Qty">
-        </div>
-    </div>
-    <div class="shipping">
-        <div class="image">
-            <img src="resources/7day.png" alt="7day">
-            <img src="resources/3day.png" alt="3day">
-            <img src="resources/overnight.png" alt="overnight">
-        </div>
-        <div class="shippinginput">
-            <div>
-                <input type="radio" name="shippingradio" id="7dayshipping" value="7">
-                <label for="7dayshipping">7-day Shipping</label>
-            </div>
-            <div>
-                <input type="radio" name="shippingradio" id="3dayshipping" value="3">
-                <label for="3dayshipping">3-day Shipping</label>
-            </div>
-            <div>
-                <input type="radio" name="shippingradio" id="overnightshipping" value="overnight">
-                <label for="overnightshipping">Overnight Shipping</label>
+    <form action="test.php" method="post" id="checkout" onsubmit="">
+        <div class="signin">
+            <div class="card">
+                <div class="title">Sign in to Website!</div>
+                <div class="inputfields">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="enjoy">Enjoy your shopping!</div>
             </div>
         </div>
-        <div class="buttons">
-            <img src="resources/reset.png" alt="reset">
-            <img src="resources/submit.png" alt="submit">
+        <div class="items">
+            <div class="image">
+                <img src="resources/shoe.png" alt="shoe">
+                <img src="resources/ball.png" alt="ball">
+                <img src="resources/shirt.png" alt="shirt">
+            </div>
+            <div class="quantity">
+                <input type="number" name="shoeqty" id="shoeqty" placeholder="Shoe Qty">
+                <input type="number" name="ballqty" id="ballqty" placeholder="Ball Qty">
+                <input type="number" name="shirtqty" id="shirtqty" placeholder="Shirt Qty">
+            </div>
         </div>
-    </div>
+        <div class="shipping">
+            <div class="image">
+                <img src="resources/7day.png" alt="7day">
+                <img src="resources/3day.png" alt="3day">
+                <img src="resources/overnight.png" alt="overnight">
+            </div>
+            <div class="shippinginput">
+                <div>
+                    <input type="radio" name="shippingradio" id="7dayshipping" value="7">
+                    <label for="7dayshipping">7-day Shipping</label>
+                </div>
+                <div>
+                    <input type="radio" name="shippingradio" id="3dayshipping" value="3">
+                    <label for="3dayshipping">3-day Shipping</label>
+                </div>
+                <div>
+                    <input type="radio" name="shippingradio" id="overnightshipping" value="overnight">
+                    <label for="overnightshipping">Overnight Shipping</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <img src="resources/reset.png" alt="reset">
+                <img src="resources/submit.png" alt="submit" onclick="validateForm()">
+            </div>
+        </div>
+    </form>
+
+    <script src="formChecker.js"></script>
 </body>
 </html>
