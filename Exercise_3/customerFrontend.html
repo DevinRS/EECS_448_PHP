@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="test.php" method="post" id="checkout" onsubmit="">
+    <form action="customerBackend.php" method="post" id="checkout" onsubmit="">
         <div class="signin">
             <div class="card">
-                <div class="title">Sign in to Website!</div>
+                <div class="title">Enter your details!</div>
                 <div class="inputfields">
                     <input type="email" name="email" id="email" placeholder="Email">
                     <input type="password" name="password" id="password" placeholder="Password">
@@ -39,11 +39,11 @@
             </div>
             <div class="shippinginput">
                 <div>
-                    <input type="radio" name="shippingradio" id="7dayshipping" value="7">
+                    <input type="radio" name="shippingradio" id="7dayshipping" value="7-day">
                     <label for="7dayshipping">7-day Shipping</label>
                 </div>
                 <div>
-                    <input type="radio" name="shippingradio" id="3dayshipping" value="3">
+                    <input type="radio" name="shippingradio" id="3dayshipping" value="3-day">
                     <label for="3dayshipping">3-day Shipping</label>
                 </div>
                 <div>
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="buttons">
-                <img src="resources/reset.png" alt="reset">
+                <img src="resources/reset.png" alt="reset" onclick="resetForm()">
                 <img src="resources/submit.png" alt="submit" onclick="validateForm()">
             </div>
         </div>

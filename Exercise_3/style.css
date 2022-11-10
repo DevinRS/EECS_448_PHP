@@ -113,6 +113,14 @@ label{
     width: 20vw;
 }
 
+.receipttext{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 1.5em;
+}
+
 @media only screen and (max-width: 800px){
     .title{
         font-size: 2em;
