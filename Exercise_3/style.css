@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'baloo';
+}
+
+@font-face {
+    font-family: 'baloo';
+    src: url(resources/baloo.regular.ttf);
+}
+
+html{
+    overflow: hidden;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    background-image: url(resources/bgImage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.signin, .items, .shipping{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 75vw;
+    height: 66.7vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.05em;
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .inputfields, .enjoy{
+    height: 33%;
+}
+
+.title{
+    display: flex;
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputfields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputfields > input{
+    height: 4em;
+    width: 50%;
+    border-radius: 1em;
+    padding-left: 2em;
+}
+
+.enjoy{
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.image, .quantity, .shippinginput, .buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2em;
+}
+
+.image > *{
+    width: 25vw;
+}
+
+.quantity > *{
+    width: 25vw;
+    font-size: 0.75em;
+    padding-left: 0.5em;
+}
+
+.shippinginput{
+    justify-content: space-around;
+}
+
+label{
+    font-size: 0.75em;
+}
+
+.buttons > *{
+    width: 20vw;
+}
+
+@media only screen and (max-width: 800px){
+    .title{
+        font-size: 2em;
+    }
+    .header, .footer{
+        font-size: 1.5em;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .image, .quantity{
+        flex-direction: column;
+    }
+    label{
+        font-size: 0.4em;
+    }
+}
